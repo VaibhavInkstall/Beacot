@@ -6,6 +6,7 @@ import StudentForm from './Components/StudentForm'
 import UserLogin from './Components/UserLogin'
 import TutorSignup from './Components/TutorForm'
 import HomePage from './Components/HomePage.jsx'
+import SideNav from '../TeacherDashboard/SideNav.jsx';
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/UserSignup" element={<UserSignup />} />
         <Route path="/UserLogin" element={<UserLogin />} />
         <Route path="/TutorSignup" element={<TutorSignup />} />
-   
+        <Route path="/TeacherDashboard" element={<SideNav />} />
+
       </Routes>
     </BrowserRouter>
     
