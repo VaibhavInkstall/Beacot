@@ -6,12 +6,13 @@ import StudentForm from './Components/StudentForm'
 import UserLogin from './Components/UserLogin'
 import TutorSignup from './Components/TutorForm'
 import HomePage from './Components/HomePage.jsx'
-
+import Layout from './style/layout'
 const App = () => {
   return (
     <>
- 
+
      <BrowserRouter>
+     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/ProfilePage" element={<ProfilePage />} />
@@ -21,8 +22,9 @@ const App = () => {
         <Route path="/TutorSignup" element={<TutorSignup />} />
    
       </Routes>
+     </Layout>
     </BrowserRouter>
-    
+  
     </>
   )
 

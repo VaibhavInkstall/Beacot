@@ -141,11 +141,11 @@ const ProfilePage = () => {
                                 <p className='text-2xl font-bold'>Subjects That I Teach</p>
 
                                 <div className='mt-5  grid grid-cols-5 w-150 '>
-                                    <p className=' bg-[#80ed99]  rounded-md w-15  text-center  '>Maths</p>
-                                    <p className=' bg-[#80ed99]  rounded-md w-15  text-center  '>Science</p>
-                                    <p className=' bg-[#80ed99]  rounded-md w-15  text-center  '>Social</p>
-                                    <p className=' bg-[#80ed99]  rounded-md w-15  text-center  '>Hindi</p>
-                                    <p className=' bg-[#80ed99]  rounded-md w-15  text-center  '>English</p>
+                                    <p className=' bg-[#80ed99]  rounded-xl w-18 text-center  '>Maths</p>
+                                    <p className=' bg-[#80ed99]  rounded-xl w-18 text-center  '>Science</p>
+                                    <p className=' bg-[#80ed99]  rounded-xl w-18 text-center  '>Social</p>
+                                    <p className=' bg-[#80ed99]  rounded-xl w-18 text-center  '>Hindi</p>
+                                    <p className=' bg-[#80ed99]  rounded-xl w-18 text-center  '>English</p>
 
                                 </div>
 
@@ -183,7 +183,7 @@ const ProfilePage = () => {
 
 
                                 {/* Speciality One */}
-                                <div className='mt-5 w-180 border-b-1 h-auto flex justify-between items-center pl-2 pb-2'>
+                                <div className='mt-5 w-180 border-b-1 border-gray-300 h-auto flex justify-between items-center pl-2 pb-2'>
                                     <div>
                                         <div className='flex w-180 justify-between items-center '>
                                             <p className='font-semibold' >Conversational English</p>
@@ -209,7 +209,7 @@ const ProfilePage = () => {
                                 </div>
 
                                 {/* Speciality Two */}
-                                <div className='mt-5 w-180 border-b-1 h-auto flex justify-between items-center pl-2 pb-2'>
+                                <div className='mt-5 w-180 border-b-1 border-gray-300 h-auto flex justify-between items-center pl-2 pb-2'>
                                     <div>
                                         <div className='flex w-180 justify-between items-center '>
                                             <p className='font-semibold' >Bussiness English</p>
@@ -235,7 +235,7 @@ const ProfilePage = () => {
                                 </div>
 
                                 {/* Speciality Three */}
-                                <div className='mt-5 w-180 border-b-1 h-auto flex justify-between items-center pl-2 pb-2'>
+                                <div className='mt-5 w-180 border-b-1 border-gray-300 h-auto flex justify-between items-center pl-2 pb-2'>
                                     <div>
                                         <div className='flex w-180 justify-between items-center '>
                                             <p className='font-semibold' >Learn To Speak English</p>
@@ -276,8 +276,9 @@ const ProfilePage = () => {
 
                                 {/* Reviews to read  */}
                                 <div className='w-180 h-auto pb-10 border-1 border-gray-500 rounded-4xl overflow-y-hidden mt-5 '>
-                                    {/* Profile */}
-                                    <div className='w-170 flex justify-between items-center mt-5 ml-5'>
+                                   
+                                   {/* Profile */}
+                                    <div className='w-160 flex justify-between items-center mt-1 ml-5 mb-5'>
                                         <div className='flex items-center'>
                                             {/* Image */}
                                             <div className='w-10 h-10 rounded-full bg-black'>
@@ -314,7 +315,7 @@ const ProfilePage = () => {
                     </div>
 
                     {/* Profile Right div */}
-                    <div className='w-100 h-145 shadow-2xl  rounded-2xl shadow-full ml-10 mt-5 fixed right-10 '>
+                    <div className='w-100 h-130 shadow-2xl  rounded-2xl shadow-full ml-10 mt-3px  fixed  right-10 bg-[white] '>
 
                         {/* Image */}
                         <div className='w-full h-50 flex flex-col justify-center items-center mt-5'>
@@ -324,7 +325,7 @@ const ProfilePage = () => {
                         </div>
 
                         {/* Information about tutor */}
-                        <div className='w-full text-center'>
+                        <div className='w-full text-center mt-5'>
                             <p className='font-bold mt-1 text-xl'>Vaibhav</p>
                         </div>
                         <div className="flex justify-around items-center text-sm text-gray-500 mt-5 font-semibold">
@@ -450,11 +451,8 @@ const ProfilePage = () => {
                                     </div>
                                 )
                             }
-
-
-
                         </div>
-                        <div className=' w-full text-center text-sm mt-10 font-semibold text-gray-400'>
+                        <div className=' w-full text-center text-sm mt-5 font-semibold text-gray-400'>
                             1 - 5 Years of Teaching Experience
                         </div>
 

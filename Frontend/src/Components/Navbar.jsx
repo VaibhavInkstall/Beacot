@@ -1,7 +1,8 @@
 import { FaSearch } from "react-icons/fa";
 import logo from "../assets/logo.svg";
-import Title from "../assets/Title.svg";    
+import Title from "../assets/Title.svg";
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from "react-router-dom"; // ✅ Import useNavigate
 import Searcher from "./HomeContent.jsx";
 
 export default function Navbar() {
@@ -9,8 +10,8 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [showCompactSearch, setShowCompactSearch] = useState(false);
     const [showFullSearch, setShowFullSearch] = useState(true);
-
     const scrolledRef = useRef(false);
+    const navigate = useNavigate(); // ✅ Hook for navigation
 
     useEffect(() => {
         const handleScroll = () => {
@@ -49,8 +50,13 @@ export default function Navbar() {
                     <div className="flex justify-between items-center">
                         {/* Logo */}
                         <div className="flex items-center space-x-">
-                            <img src={logo} alt="Beacot" className="h-10" />
-                            <img src={Title} alt="Beacot" className="h-17" />
+                            <img
+                                src={logo}
+                                alt="Beacot"
+                                className="h-10 cursor-pointer"
+                                onClick={() => navigate("/")} // ✅ Navigates to homepage
+                            />
+                            <img src={Title} alt="Beacot Title" className="h-17" />
                         </div>
 
                         {/* Compact Search Bar */}
@@ -75,7 +81,6 @@ export default function Navbar() {
                                 </div>
                             </div>
                         )}
-
 
                         {/* User Options */}
                         <div className="flex items-center space-x-2 text-sm">
@@ -153,16 +158,15 @@ export default function Navbar() {
 
                             {/* Search Button */}
                             <button
-                                className={`bg-[#B911C1] text-white p-2 rounded-full transition-transform duration-300 ease-in-out ${isSearchFocused ? 'scale-105' : 'scale-100'
-                                    }`}
+                                className={`bg-[#B911C1] text-white p-2 rounded-full transition-transform duration-300 ease-in-out ${isSearchFocused ? 'scale-105' : 'scale-100'}`}
                             >
                                 <FaSearch size={14} />
                             </button>
                         </div>
+                        
                     )}
                 </div>
             </div>
-            {/* <Searcher /> */}
         </>
     );
 }
