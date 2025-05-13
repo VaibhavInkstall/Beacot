@@ -1,14 +1,17 @@
 import React from "react";
 import { FaInstagram, FaYoutube, FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import bird from "../assets/beacot.png";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#00BDE3] text-white py-10 px-6 md:px-16">
+        <footer className="bg-[#ac25c2] text-white py-10 px-6 md:px-16">
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
                 {/* Logo */}
-                <div>
-                    <h1 className="text-3xl font-semibold text-[white]">beacot</h1>
+                <div className="flex  space-x- cursor-pointer h-10 items-center">
+                    <img src={bird} alt="Logo" className="h-10" />
+                    <h1 className="text-2xl text-white">beacot</h1>
                 </div>
+
 
                 {/* About Us */}
                 <div>
@@ -94,7 +97,7 @@ export default function Footer() {
 
             {/* Bottom Footer */}
             <div className="flex flex-col md:flex-row justify-between items-center mt-10 pt-6 border-t border-white/10">
-                <p className="text-white/80 hover:text-white transition-colors duration-300"> 2025 Beacot</p>
+                <p className="text-white/80 hover:text-white transition-colors duration-300"> © 2025 Beacot</p>
                 <div className="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" className="text-white/80 hover:text-white hover:underline transition-all duration-300">Privacy Policy</a>
                     <a href="#" className="text-white/80 hover:text-white hover:underline transition-all duration-300">Terms and Conditions</a>

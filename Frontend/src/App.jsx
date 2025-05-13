@@ -6,13 +6,15 @@ import StudentForm from './Components/StudentForm'
 import UserLogin from './Components/UserLogin'
 import TutorSignup from './Components/TutorForm'
 import HomePage from './Components/HomePage.jsx'
-import TeacherDashboard from './TeacherDashboard/Components/Pages/TeacherDashboard.jsx'
+import Layout from './style/layout'
+import TeacherDashboard from '../src/TeacherDashboard/Components/Pages/TeacherDashboard.jsx'
 
 const App = () => {
   return (
     <>
- 
+
      <BrowserRouter>
+     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/ProfilePage" element={<ProfilePage />} />
@@ -23,8 +25,9 @@ const App = () => {
         <Route path="/TeacherDashboard" element={<TeacherDashboard />} />
 
       </Routes>
+     </Layout>
     </BrowserRouter>
-    
+  
     </>
   )
 
