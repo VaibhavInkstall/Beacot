@@ -9,17 +9,21 @@ import { FiMessageSquare } from "react-icons/fi";
 import { HiOutlineUsers } from 'react-icons/hi';
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaAngleDoubleLeft } from "react-icons/fa";
+import { useAuth } from "../../Context/AuthProvider";
 
 
 const SideNav = () => {
-    const [isSidenavOpen, setIsSidenavOpen] = useState(false);
-    const [isDashboardClicked, setIsDashboardClicked] = useState(false);
-    const [isProfileClicked, setIsProfileClicked] = useState(false);
-    const [isWalletClicked, setIsWalletClicked] = useState(false);
-    const [isClassesClicked, setIsClassesClicked] = useState(false);
-    const [isCalendarClicked, setIsCalendarClicked] = useState(false);
-    const [isMessagesClicked, setIsMessagesClicked] = useState(false);
-    const [isStudentsClicked, setIsStudentsClicked] = useState(false);
+    
+    const {isSidenavOpen, setIsSidenavOpen} = useAuth();
+    const {isDashboardClicked, setIsDashboardClicked} = useAuth();
+    const {isProfileClicked, setIsProfileClicked} = useAuth();
+    const {isWalletClicked, setIsWalletClicked} = useAuth();
+    const {isClassesClicked, setIsClassesClicked} = useAuth();
+    const {isCalendarClicked, setIsCalendarClicked} = useAuth();
+    const {isMessagesClicked, setIsMessagesClicked} = useAuth();
+    const {isStudentsClicked, setIsStudentsClicked} = useAuth();
+
+    
 
     const handlesidenav = () => {
         setIsSidenavOpen(!isSidenavOpen);
@@ -92,7 +96,7 @@ const SideNav = () => {
         <>
             <div className={`w-15 h-screen border-1 border-gray-200 ${isSidenavOpen ? 'w-50 duration-500' : 'w-15 duration-500 flex flex-col justify-center items-center'}`}>
                 <div className='h-14.5  w-full border-b-1 border-gray-200  flex justify-center items-center'>
-                <AiOutlineThunderbolt size={30} className='text-skyblue' />
+                <AiOutlineThunderbolt size={30} className='text-blue-500' />
 
                     {
                         isSidenavOpen ? (
