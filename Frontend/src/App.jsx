@@ -7,6 +7,8 @@ import UserLogin from './Components/UserLogin'
 import TutorSignup from './Components/TutorForm'
 import HomePage from './Components/HomePage.jsx'
 import Layout from './style/layout'
+import TeacherDashboard from '../TeacherDashboard/TeacherDashboard.jsx'
+
 const App = () => {
   return (
     <>
@@ -20,7 +22,8 @@ const App = () => {
         <Route path="/UserSignup" element={<UserSignup />} />
         <Route path="/UserLogin" element={<UserLogin />} />
         <Route path="/TutorSignup" element={<TutorSignup />} />
-   
+        <Route path="/TeacherDashboard" element={<TeacherDashboard />} />
+
       </Routes>
      </Layout>
     </BrowserRouter>

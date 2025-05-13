@@ -94,7 +94,7 @@ const ProfilePage = () => {
 
                     {/* Video and Desc left div */}
                     <div className='overflow-y-hidden h-auto'>
-                        <h1 className='text-2xl font-bold w-180 ml-10'>Here Will Be The Title which you will write in your Form so write carefully </h1>
+                        <h1 className='text-2xl font-bold w-180 ml-10 text-skyblue'>Here Will Be The Title which you will write in your Form so write carefully </h1>
                         {/* Video */}
                         <div className='w-170 rounded-2xl ml-10 h-90 mt-5 overflow-y-hidden'>
                             <video src={video} controls autoPlay muted ></video>
@@ -334,7 +334,7 @@ const ProfilePage = () => {
                         </div>
                         <div className='w-full flex flex-col justify-center items-center gap-y-2 mt-5'>
 
-                            <button className='w-80 py-2 border-2 border-[#ac25c2] rounded-xl cursor-pointer flex justify-center items-center gap-3 bg-[#ac25c2]  border-[#ac25c2] text-white hover:text-black duration-300 ease-in-out'>
+                            <button className='w-80 py-2 border-2 border-[#ac25c2] rounded-xl cursor-pointer flex justify-center items-center gap-3 bg-[#ac25c2]   text-white hover:text-black duration-300 ease-in-out'>
                                 <IoIosStarOutline size={20} /> Book Demo Session
                             </button>
 
@@ -371,7 +371,7 @@ const ProfilePage = () => {
                                                 </div>
                                                 <button
                                                     onClick={handleCalendar}
-                                                    className='text-gray-500 text-gray-700 transition-colors text-2xl hover:text-red-500 cursor-pointer'
+                                                    className='text-gray-500  transition-colors text-2xl hover:text-red-500 cursor-pointer'
                                                 >
                                                     ×
                                                 </button>

@@ -71,7 +71,7 @@ const TutorSignup = () => {
           </div>
 
           <div className='mt-5'>
-            <p>Email<span className='text-red-500'>*</span></p>
+            <p className='mb-1'>Email<span className='text-red-500'>*</span></p>
             <input type="text" placeholder='Email' className='w-100 h-10 border-1 mt-1 px-1' />
           </div>
 
@@ -258,18 +258,18 @@ const TutorSignup = () => {
 
           <div className='mt-5'>
             <p>Upload your Resume<span className='text-red-500'>*</span></p>
-            <input type="file" className='w-100 h-7 rounded-xl mt-1 px-1 bg-gray-400  px-2 pt-1' />
+            <input type="file" className='w-100 h-7 rounded-xl mt-1 px-1 bg-gray-400     pt-1' />
           </div>
 
           <div className='mt-5'>
             <p>Upload your Certificates<span className='text-red-500'>*</span></p>
-            <input type="file" className='w-100 h-7 rounded-xl mt-1 px-1 bg-gray-400  px-2 pt-1' />
+            <input type="file" className='w-100 h-7 rounded-xl mt-1 px-1 bg-gray-400   pt-1' />
           </div>
 
           <div className='mt-5'>
             <p>Upload your Horizontal Images (5 Images)<span className='text-red-500'>*</span></p>
             <p className='border-1 border-gray-400 rounded-lg p-3'> <span className="text-red-500">Note:</span> Yopr Profile will get rejected if you don't share clear Photo</p>
-            <input type="file" multiple className='w-100 h-7 rounded-xl mt-1 px-1 bg-gray-400  px-2 pt-1' />
+            <input type="file" multiple className='w-100 h-7 rounded-xl mt-1 px-1 bg-gray-400   pt-1' />
           </div>
 
           <div className='mt-5 w-105'>
@@ -279,7 +279,7 @@ const TutorSignup = () => {
                 If you are sharing your g-drive link please ensure to make it public. Use Zoom, Google Meet, MS teams or any other tool, to record your teaching video.</p>
             </div>
 
-            <input type="file" multiple className='w-100 h-7 rounded-xl mt-1 px-1 bg-gray-400  px-2 pt-1' />
+            <input type="file" multiple className='w-100 h-7 rounded-xl mt-1 px-1 bg-gray-400  pt-1' />
           </div>
 
 
