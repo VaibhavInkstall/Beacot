@@ -91,8 +91,9 @@ const SideNav = () => {
     return (
         <>
             <div className={`w-15 h-screen border-1 border-gray-200 ${isSidenavOpen ? 'w-50 duration-500' : 'w-15 duration-500 flex flex-col justify-center items-center'}`}>
-                <div className='h-15 border-b-1 border-gray-200  flex justify-center items-center'>
-                    <AiOutlineThunderbolt size={30} className='text-blue-500 ' />
+                <div className='h-14.5  w-full border-b-1 border-gray-200  flex justify-center items-center'>
+                <AiOutlineThunderbolt size={30} className='text-skyblue' />
+
                     {
                         isSidenavOpen ? (
                             <p className='duration-500 text-lg ml-5 mr-5 '>Beacot</p>
@@ -108,10 +109,10 @@ const SideNav = () => {
                     
                 </div>
 
-                <div className={ `h-auto  ${isSidenavOpen ? 'pb-40' : 'pb-30'} flex flex-col space-y-5 justify-center items-center mt-5`}>
+                <div className={ `h-auto  ${isSidenavOpen ? 'pb-40 ' : 'pb-30'} flex flex-col space-y-5 justify-center items-center mt-4`}>
 
                     <div onClick={handleclick} className={` flex  gap-3 ${isSidenavOpen ? 'w-42 cursor-pointer duration-500 flex justify-start items-center  mr-5 p-1' : 'w-10 h-10 duration-500 flex flex-col justify-center items-center'} ${isDashboardClicked ? 'bg-blue-300 rounded-md' : ''}`}>
-                        <MdOutlineWidgets size={25} className={`cursor-pointer text-gray-600 w-7 h-7 p-0.5 rounded-md ${isDashboardClicked ? 'bg-blue-300 rounded-md' : ''} `} />
+                        <MdOutlineWidgets size={25} className={`cursor-pointer text-gray-600 w-7 h-7 p-0.5 rounded-md ${isDashboardClicked ? 'rounded-md' : ''} `} />
                         {
                             isSidenavOpen ? (
                                 <p  className='duration-500 text-gray-600'>Dashboard</p>
