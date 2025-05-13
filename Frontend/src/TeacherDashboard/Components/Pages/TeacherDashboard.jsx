@@ -1,6 +1,6 @@
 import React from 'react'
-import SideNav from './SideNav'
-import TeacherNav from './TeacherNav'
+import SideNav from '../Pages/SideNav.jsx'
+import TeacherNav from '../Pages/TeacherNav.jsx'
 
 const TeacherDashboard = () => {
   return (

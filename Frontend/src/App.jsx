@@ -6,7 +6,7 @@ import StudentForm from './Components/StudentForm'
 import UserLogin from './Components/UserLogin'
 import TutorSignup from './Components/TutorForm'
 import HomePage from './Components/HomePage.jsx'
-import TeacherDashboard from '../TeacherDashboard/TeacherDashboard.jsx'
+import TeacherDashboard from './TeacherDashboard/Components/Pages/TeacherDashboard.jsx'
 
 const App = () => {
   return (
